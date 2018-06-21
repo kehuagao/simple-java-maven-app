@@ -3,14 +3,14 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-            	sh 'd:'
-            	sh 'D:/.jenkins/workspace/simple-java-maven-app@script'
-                sh 'mvn -B -DskipTests clean package'
+            	d:
+            	cd D:/.jenkins/workspace/simple-java-maven-app@script
+                mvn -B -DskipTests clean package
             }
         }
         stage('Test') {
             steps {
-                sh 'mvn test'
+                mvn test
             }
             post {
                 always {
