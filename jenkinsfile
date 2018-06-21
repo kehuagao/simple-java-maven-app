@@ -6,6 +6,7 @@ pipeline {
         }
     }
     stages {
+    	dir('D:/.jenkins/workspace/simple-java-maven-app')
         stage('Build') {
             steps {
                 sh 'mvn -B -DskipTests clean package'
