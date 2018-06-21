@@ -1,10 +1,10 @@
 pipeline {
 	agent any
     stages {
-    	dir('D:/.jenkins/workspace/simple-java-maven-app')
+    	dir('D:/.jenkins/workspace/simple-java-maven-app@script')
         stage('Build') {
             steps {
-                sh 'maven.bat'
+                sh 'mvn -B -DskipTests clean package'
             }
         }
         stage('Test') {
@@ -17,10 +17,6 @@ pipeline {
                 }
             }
         }
-        stage('Deliver') { 
-            steps {
-                sh 'deliver.bat' 
-            }
-        }
+        
     }
 }
