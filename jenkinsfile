@@ -1,9 +1,10 @@
 pipeline {
 	agent any
     stages {
-    	dir('D:/.jenkins/workspace/simple-java-maven-app@script')
         stage('Build') {
             steps {
+            	sh 'd:'
+            	sh 'D:/.jenkins/workspace/simple-java-maven-app@script'
                 sh 'mvn -B -DskipTests clean package'
             }
         }
