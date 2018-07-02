@@ -4,7 +4,7 @@ pipeline {
         stage('Build') {
             steps {
             	bat 'd:'
-            	bat 'cd D:/.jenkins/workspace/simple-java-maven-app@script'
+            	bat 'cd D:/.jenkins/workspace/simple-java-maven-app'
                 bat 'mvn -B -DskipTests clean package'
             }
         }
