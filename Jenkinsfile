@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-            	bat 'd:'
+            	bat 'c:'
             	bat 'cd C:/Users/lenovo/jenkins_home/workspace/Demo'
                 bat 'mvn -B -DskipTests clean package'
             }
