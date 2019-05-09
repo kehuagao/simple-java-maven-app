@@ -11,8 +11,6 @@ pipeline {
         stage('Test') {
             steps {
                 bat 'mvn test'
-                bat 'cd target/surefire-reports/'
-                bat 'powershell 'ls "*.xml" | foreach-object { $_.LastWriteTime = Get-Date }''
             }
             post {
                 always {
