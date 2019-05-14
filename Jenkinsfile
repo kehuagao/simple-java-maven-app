@@ -4,7 +4,7 @@ pipeline {
         stage('Build') {
             steps {
             	bat 'd:'
-            	bat 'cd D:/kehua/.jenkins/workspace/simple-java-maven-app'
+            	bat 'cd D:/kehua/.jenkins/workspace/Demo3'
                 bat 'mvn -B -DskipTests clean package'
             }
         }
