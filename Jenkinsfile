@@ -3,8 +3,8 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-            	bat 'C:'
-            	bat 'cd C:/Users/lenovo/jenkins_home/workspace/Demo3'
+            	bat 'E:'
+            	bat 'cd E:\TestLab\JENKINS_HOME\workspace\simple-java-maven-app'
                 bat 'mvn -B -DskipTests clean package'
             }
         }
