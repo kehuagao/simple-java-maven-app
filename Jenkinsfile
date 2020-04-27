@@ -3,8 +3,8 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-            	bat 'd:'
-            	bat 'cd D:/kehua/.jenkins/workspace/Demo3'
+            	bat 'C:'
+            	bat 'cd C:/Users/lenovo/jenkins_home/workspace/Demo3'
                 bat 'mvn -B -DskipTests clean package'
             }
         }
