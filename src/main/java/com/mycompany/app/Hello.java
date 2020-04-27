@@ -4,7 +4,7 @@ package com.mycompany.app;
  * Hello world!
  * kehua
  */
-public class App
+public class Hello
 {
 
     private final String message = "Hello World!";
