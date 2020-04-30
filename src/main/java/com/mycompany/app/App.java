@@ -3,6 +3,7 @@ package com.mycompany.app;
 /**
  * Hello world!
  * kehua
+ * 2020.4.30
  */
 public class App
 {
